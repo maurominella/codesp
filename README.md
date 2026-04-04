@@ -10,6 +10,6 @@ In order to create a new GitHub CodeSpace with:
 ```json
 {
   "image": "mcr.microsoft.com/devcontainers/python:3.13",
-  "postCreateCommand": "pip install uv"
+  "postCreateCommand": "pip install -r requirements.txt uv && curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
 }
 ```
