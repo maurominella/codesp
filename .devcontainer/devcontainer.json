@@ -1,4 +1,4 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3.13",
-  "postCreateCommand": "pip install uv"
+  "postCreateCommand": "pip install -r requirements.txt && curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
 }
