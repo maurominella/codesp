@@ -1,4 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  // Executes two commands after the development container is created:
+  // 1. Installs Python dependencies from requirements.txt using pip
+  // 2. Downloads and installs the Azure CLI using the official installation script
   "postCreateCommand": "pip install -r requirements.txt && curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
 }
